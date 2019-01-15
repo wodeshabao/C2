@@ -14,7 +14,7 @@ int main()
         printf("3---查看敏感字符\n");
         printf("4---替换敏感字符\n");
         printf("5---退出\n");
-        
+
         printf("请输入相应的功能编号\n");
 
         int code;
@@ -37,9 +37,18 @@ int main()
         }
         if (code == 2)
         {
+            printf("删除最后一个敏感字符\n");
+
+            index--;
+
+            printf("删除成功，点击回车继续\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if (code == 3)
         {
+           
         }
         if (code == 4)
         {
