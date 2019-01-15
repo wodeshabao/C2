@@ -1,6 +1,6 @@
 #include <stdio.h>
 char arr[1024];
-int index=0;
+int index = 0;
 
 int main()
 {
@@ -24,39 +24,45 @@ int main()
         {
             printf("请输入要添加的敏感字符\n");
             char m;
-            scanf("%d",&m);
-            scanf("%d",&m);
+            scanf("%c", &m);
+            scanf("%c", &m);
 
-            arr[index]=m;
+            arr[index] = m;
             index++;
 
             printf("添加成功，点击回车继续\n");
             char x;
-            scanf("%c",&x);
-            scanf("%c",&x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 2)
         {
             printf("删除最后一个敏感字符\n");
-
-            index--;
-
+            if (index == 0)
+            {
+                printf("删除失败\n");
+            }
+            else
+            {
+                index--;
+            }
             printf("删除成功，点击回车继续\n");
             char x;
-            scanf("%c",&x);
-            scanf("%c",&x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 3)
         {
             printf("你的敏感字符为：\n");
-            for(int i=0;i<index;i++){
-                printf("你的第%d个敏感字符为%c\n",i+1,arr[i]);
+            for (int i = 0; i < index; i++)
+            {
+                printf("你的第%d个敏感字符为%c\n", i + 1, arr[i]);
             }
 
             printf("点击回车继续\n");
             char x;
-            scanf("%c",&x);
-            scanf("%c",&x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 4)
         {
