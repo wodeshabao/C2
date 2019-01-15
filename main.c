@@ -40,13 +40,13 @@ int main()
             printf("删除最后一个敏感字符\n");
             if (index == 0)
             {
-                printf("删除失败\n");
+                printf("删除失败,点击回车继续\n");
             }
             else
             {
                 index--;
+                printf("删除成功，点击回车继续\n");
             }
-            printf("删除成功，点击回车继续\n");
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
@@ -66,6 +66,30 @@ int main()
         }
         if (code == 4)
         {
+            printf("请输入一段英文\n");
+            char str[1024];
+            scanf("%s", str);
+            for (int i = 0; str[i] != '\0'; i++)
+            {
+                char a = str[i];
+                int flag = 0;
+                for (int j = 0; j < index; j++)
+                {
+                    if (a == arr[j])
+                    {
+                        flag = 1;
+                    }
+                }
+                if (flag != 0)
+                {
+                    str[i] = '*';
+                }
+            }
+            printf("%s\n", str);
+            printf("点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 5)
         {
