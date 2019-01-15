@@ -63,6 +63,8 @@ int main()
         }
         if (code == 5)
         {
+            printf("程序结束\n");
+            break;
         }
     }
 
