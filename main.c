@@ -48,7 +48,15 @@ int main()
         }
         if (code == 3)
         {
-           
+            printf("你的敏感字符为：\n");
+            for(int i=0;i<index;i++){
+                printf("你的第%d个敏感字符为%c\n",i+1,arr[i]);
+            }
+
+            printf("点击回车继续\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if (code == 4)
         {
