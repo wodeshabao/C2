@@ -14,7 +14,7 @@ int main()
         printf("3---查看敏感字符\n");
         printf("4---替换敏感字符\n");
         printf("5---退出\n");
-
+        
         printf("请输入相应的功能编号\n");
 
         int code;
